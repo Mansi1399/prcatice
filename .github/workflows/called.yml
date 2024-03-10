@@ -1,0 +1,21 @@
+name: called
+
+on:
+  workflow_call:
+    inputs:
+      branch_name:
+        description: "Add branch name"
+        required: true
+        type: string
+      repo_name:
+        description: "Add repo name"
+        required: true
+        type: string
+
+jobs:
+  reg:
+    runs-on: ubuntu:latest
+    name: my
+    steps:
+      - name: new
+        run: echo "yes"
